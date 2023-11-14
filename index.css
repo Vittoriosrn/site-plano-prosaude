@@ -9,9 +9,11 @@
 }
 
 header{
-    background-image: url(imgs/Bg.png);
+    background-image: url(imgs/Bg_desktop.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    /*background-size: 100vw;*/
+    background-size: cover;
+    background-position: center;
     height: 60vh;
     width: 100vw;
     position: absolute;
@@ -65,6 +67,22 @@ header nav{
 
 /*Nav and slider BANNER*/
 
+.slider_button_container{
+    display: flex;
+    flex-direction: column;
+}
+.slider_button_container label{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 102.682%;
+
+    margin-top: 9px;
+}
+.selected_slider_container label{
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .slider_button{
     background-color: #ffff;
     width: 98px;
@@ -112,3 +130,60 @@ header nav{
     margin-top: 20px;
 }
 
+/*Conteudo da pagina*/
+
+/*Beneficios do Plano*/
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(0px,120px);
+}
+main > p, main h3{
+    color: #5B6A69;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 102.682%; /* 24.644px */
+}
+
+main section p{
+    color: #029E89;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 102.682%; /* 16.429px */
+    text-decoration: underline;
+}
+main > h2{
+    color: #02C8AD;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 102.682%; /* 22.59px */
+    margin-top: 8px;
+
+}
+.bg_service{
+    background-image: url(imgs/bg_service.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main > section > div h3{
+    padding: 11px 0px 7px 0px;
+
+}
+main > section > div > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 54px;
+}
+.firts_service div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
